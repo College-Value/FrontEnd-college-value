@@ -35,7 +35,7 @@ const Login = props => {
           College Value
         </h1>
       </Link>
-      <h3 className="pageDesc">Log In</h3>
+      <p className="pageDesc">Log In</p>
       <form  onSubmit={handleSubmit} className="loginForm">
         <h2>Username:</h2>
         <input type="text" name="username" placeholder="username" onChange={handleChange}/>
@@ -44,7 +44,7 @@ const Login = props => {
         <button type="submit">Log In</button>
       </form>
       <div>
-        <p> Don't have an account?</p>
+        <p className='question'> Don't have an account?</p>
 
         <Link className="loginSignUpLink" to="/signup">
           {" "}
