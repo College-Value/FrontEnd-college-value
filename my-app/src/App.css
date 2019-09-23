@@ -1,8 +1,10 @@
 .App {
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
 }
 
@@ -19,4 +21,96 @@
 
 .App-link {
   color: #09d3ac;
+} */
+
+.LoginTitle {
+  font-size: 80px;
+  border-bottom: 1px solid lightgrey;
+ padding: 20px;
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
+
+.titleLink {
+  text-decoration: none;
+  color: black;
+}
+
+.LoginTitle img {
+  padding: 20px;
+}
+
+.loginForm {
+  /* border: 1px solid red; */
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.loginForm button {
+  font-size: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  color: grey;
+  transition: .4s;
+}
+
+.loginForm button:hover {
+  cursor: pointer;
+  color: black;
+  border: 1px solid black;
+}
+
+.loginForm input {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  color: grey;
+  font-size: 14px;
+  transition: .4s;
+}
+
+.loginForm input:hover {
+  color: black;
+  border: 1px solid black;
+}
+
+.loginPage h2 {
+  font-size: 28px;
+}
+
+.loginPage p {
+  font-size: 20px;
+  border-top: 1px solid lightgray;
+  padding: 30px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.loginSignUpLink {
+  transition: .4s;
+  font-size: 20px;
+  color: #0071a5;
+}
+
+.loginSignUpLink:hover {
+color: #0993d3;
+}
+
+
+
+
