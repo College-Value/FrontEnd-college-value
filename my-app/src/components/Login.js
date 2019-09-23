@@ -14,7 +14,7 @@ const Login = props => {
     const handleSubmit = e => {
         e.preventDefault()
         axios
-        .post('')
+        .post('https://gcj2-college-value.herokuapp.com/login')
         .then(res => {
             localStorage.setItem('token', res.data.payload)
             props.history.push('/collegePage')
