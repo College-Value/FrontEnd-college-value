@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import CV from "../imgs/collegeValue.png";
+import CV from "../imgs/largelogo.png";
 
 const SignUp = props => {
   return (
@@ -12,7 +12,7 @@ const SignUp = props => {
           College Value
         </h1>
       </Link>
-      <h3 className="pageDesc">Sign Up</h3>
+      <p className="pageDesc">Sign Up</p>
       <form className="loginForm">
         <h2>Username:</h2>
         <input type="text" name="username" placeholder="username" />
@@ -21,7 +21,7 @@ const SignUp = props => {
         <button type="submit">Sign Up</button>
       </form>
       <div>
-        <p> Already have an account?</p>
+        <p className='question'> Already have an account?</p>
 
         <Link className="loginSignUpLink" to="/login">
           {" "}

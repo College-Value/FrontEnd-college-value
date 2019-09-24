@@ -78,10 +78,11 @@
 .loginForm input {
   background-color: white;
   padding: 10px;
+  
   border-radius: 5px;
   border: 1px solid lightgray;
   color: grey;
-  font-size: 14px;
+  font-size: 18px;
   transition: .4s;
 }
 
@@ -91,11 +92,11 @@
 }
 
 .loginPage h2 {
-  font-size: 28px;
+  font-size: 38px;
 }
 
-.loginPage p {
-  font-size: 20px;
+.question {
+  font-size: 24px;
   border-top: 1px solid lightgray;
   padding: 30px;
   width: fit-content;
@@ -104,7 +105,7 @@
 
 .loginSignUpLink {
   transition: .4s;
-  font-size: 20px;
+  font-size: 24px;
   color: #0071a5;
 }
 
@@ -113,7 +114,7 @@ color: #0993d3;
 }
 
 .pageDesc {
-  font-size: 60px;
+  font-size: 80px;
   padding: 20px;
   width: fit-content;
   margin: 0 auto;
