@@ -8,10 +8,16 @@ import "../../src/App.css"
 const Navigation = () => {
   return (
     <div>
+
       <section className="nav">
 
         <img src={CV} width="60" height="60" />
       
+
+      <div className="nav">
+     
+     
+
         <div>
           <Link to="/about">About</Link>
         </div>
