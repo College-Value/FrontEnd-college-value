@@ -5,7 +5,7 @@ import "../../src/App.css"
 
 
 
-const Navigation = () => {
+const InternalNav = () => {
   return (
     <div>
       <section className="nav">

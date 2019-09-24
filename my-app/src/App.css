@@ -120,3 +120,13 @@ color: #0993d3;
   margin: 0 auto;
   
 }
+
+.nav {
+  display: flex;
+  text-decoration: none;
+  font-size: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  color: grey;
+}

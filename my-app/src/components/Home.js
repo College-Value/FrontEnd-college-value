@@ -4,12 +4,15 @@ import HomeImage from "../imgs/main-image.jpg"
 import Navigation from "./Navigation"
 
 
-
 const Home = () => {
   return (
- 
+
     <div>
-         <Navigation />
+      <Navigation />
+
+      <div class="collegeai collegeai-session-data"
+        data-api-key="YOUR_API_KEY"
+      ></div>
       <header>
         <h1>College Value/Earnings Predictor</h1>
         <img
@@ -22,13 +25,13 @@ const Home = () => {
       <div class="features" />
       <i class="fas fa-balance-scale-left"></i>
       <p>Data-based decisions</p>
-      <p>Choosing a college is an emotional decision, use the predictor to focus on facts</p>
+      <p>Choosing a college is an emotional decision, the College/Savings Predictor helps you focus on facts.</p>
 
 
       <div class="features" />
       <i class="fas fa-piggy-bank"></i>
       <p>A lifetime of savings</p>
-      <p>Save money and time by making sure the cost of your college education aligns with your life plans</p>
+      <p>Save money and time by making sure the cost of your college education aligns with your life plans.</p>
 
 
 
