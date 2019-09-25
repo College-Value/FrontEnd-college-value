@@ -25,6 +25,7 @@ const Navigation = () => {
         </div>
         <div>
           <Link to="/signup" alt="signup page">Sign Up</Link>
+    </div>
 
         </div>
       </section>
