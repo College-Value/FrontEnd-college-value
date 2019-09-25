@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import HomeImage from "../imgs/main-image.jpg";
 import Navigation from "./Navigation";
+import Axios from 'axios';
+import PhotoCard from "./PhotoCard"
 import CV from "../imgs/largelogo.png";
 import college1 from '../imgs/college1.png'
 import college2 from '../imgs/college 2.png'
 import college3 from '../imgs/college3.jpg'
 
 
+
 const Home = () => {
+
+  const [homeImg, sethomeImg] = useState([])
+
+  useEffect(() => {
+    Axios.get("https://api.unsplash.com/collections/4755774/photos?client_id=0a92c5c475ba50f63f6f97cae6fbf57d3b9e16db8bdcfba5b0a93b8b7bc8aeb1&query=college&w=200px&h=200px").then(response => {
+
+      const homeImg = response.data
+
+      sethomeImg(homeImg);
+    })
+  }, [])
+
   return (
+
     <div className="homePage">
       <Navigation />
       <header>
@@ -55,6 +71,7 @@ const Home = () => {
          
           <img src={college3} width='400'/>
         </div>
+
       </div>
     </div>
   );
