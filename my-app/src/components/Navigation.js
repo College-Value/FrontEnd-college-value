@@ -1,5 +1,4 @@
-  
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
 import CV from "../imgs/largelogo.png";
 import "../../src/App.css"
@@ -16,9 +15,8 @@ const Navigation = () => {
         <img src={CV} width="60" height="60" alt="college value logo" />
 
       <div className="nav">
-     
 
-        <div>
+       <div>
           <Link to="/collegepage" alt="predictions">Get Your Predictions</Link>
         </div>
         <div>
@@ -27,6 +25,7 @@ const Navigation = () => {
         </div>
         <div>
           <Link to="/signup" alt="signup page">Sign Up</Link>
+
         </div>
       </section>
     </div>
