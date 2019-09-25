@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import HomeImage from "../imgs/main-image.jpg";
 import Navigation from "./Navigation";
-import Axios from 'axios';
 import PhotoCard from "./PhotoCard"
 import CV from "../imgs/largelogo.png";
 import college1 from '../imgs/college1.png'
@@ -13,16 +11,6 @@ import college3 from '../imgs/college3.jpg'
 
 const Home = () => {
 
-  const [homeImg, sethomeImg] = useState([])
-
-  useEffect(() => {
-    Axios.get("https://api.unsplash.com/collections/4755774/photos?client_id=0a92c5c475ba50f63f6f97cae6fbf57d3b9e16db8bdcfba5b0a93b8b7bc8aeb1&query=college&w=200px&h=200px").then(response => {
-
-      const homeImg = response.data
-
-      sethomeImg(homeImg);
-    })
-  }, [])
 
   return (
 
@@ -32,6 +20,7 @@ const Home = () => {
         <img src={CV} width="60" height="60" />
         <h1>College Value/Earnings Predictor</h1>
       </header>
+      <PhotoCard />
       <div className="homepageContent">
         <div className='callToAction'>
         <span>
@@ -40,18 +29,18 @@ const Home = () => {
           you.
         </span>
         <Link to="/signup">
-          <button class="sign-up-btn">Sign Up</button>
+          <button className="sign-up-btn">Sign Up</button>
         </Link>
         <p> or </p>
         <Link to="/login">
-          <button class="log-in-btn">Log in</button>
+          <button className="log-in-btn">Log in</button>
         </Link>
         </div>
         
 
         <div className='div1'>
          
-          <p> <i class="fas fa-balance-scale-left"></i>{' '}<br></br>Choosing a college is an emotional decision, use the predictor to
+          <p> <i className="fas fa-balance-scale-left"></i>{' '}<br></br>Choosing a college is an emotional decision, use the predictor to
             focus on facts</p>
         
           <img src={college1} width='300' />
@@ -59,14 +48,14 @@ const Home = () => {
 
         <div className='div2'>
           
-          <p><i class="fas fa-piggy-bank"></i>{' '}<br></br> Save money and time by making sure the cost of your college
+          <p><i className="fas fa-piggy-bank"></i>{' '}<br></br> Save money and time by making sure the cost of your college
             education aligns with your life plans</p>
           <img src={college2} width='400'/>
         </div>
 
         <div className='div1'>
         
-          <p>  <i class="fas fa-graduation-cap"></i>{' '}<br></br> Find out which college will help you achieve your goals with the
+          <p>  <i className="fas fa-graduation-cap"></i>{' '}<br></br> Find out which college will help you achieve your goals with the
             least amount of debt possible</p>
          
           <img src={college3} width='400'/>
