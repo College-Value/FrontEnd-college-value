@@ -1,3 +1,4 @@
+  
 import React from 'react';
 import { Link } from "react-router-dom";
 import CV from "../imgs/largelogo.png";
@@ -9,9 +10,13 @@ import "../../src/App.css"
 const Navigation = () => {
   return (
     <div>
+
       <section className="nav">
 
         <img src={CV} width="60" height="60" alt="college value logo" />
+
+      <div className="nav">
+     
 
         <div>
           <Link to="/collegepage" alt="predictions">Get Your Predictions</Link>
