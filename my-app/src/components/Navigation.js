@@ -1,23 +1,34 @@
   
 import React from 'react';
 import { Link } from "react-router-dom";
+import CV from "../imgs/largelogo.png";
+import "../../src/App.css"
+
+
+
 
 const Navigation = () => {
   return (
     <div>
+
+      <section className="nav">
+
+        <img src={CV} width="60" height="60" alt="college value logo" />
+
       <div className="nav">
      
-     
+
         <div>
-          <Link to="/">Home</Link>
+          <Link to="/collegepage" alt="predictions">Get Your Predictions</Link>
         </div>
         <div>
-          <Link to="/about">About</Link>
+          <Link to="/about" alt="about page">About</Link>
+
         </div>
         <div>
-          <Link to="">Predictions</Link>
+          <Link to="/signup" alt="signup page">Sign Up</Link>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

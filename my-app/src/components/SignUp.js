@@ -10,7 +10,7 @@ const SignUp = props => {
       <Navigation />
       <Link className="titleLink" to="/">
         <h1 className="LoginTitle">
-          <img src={CV} width="60" height="60" />
+          <img src={CV} width="60" height="60" alt="college value logo"/>
           College Value
         </h1>
       </Link>
