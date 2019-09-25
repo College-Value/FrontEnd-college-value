@@ -16,7 +16,7 @@ const Login = props => {
         e.preventDefault()
         console.log("cred username", creds.username)
         axios
-        .post('https://gcj2-college-value.herokuapp.com/login', `grant_type=password&username={creds.username}&password={creds.password}`, {
+        .post('https://gcj2-college-value.herokuapp.com/login', `grant_type=password&username=${creds.username}&password=${creds.password}`, {
           headers: {
             Authorization: 'Basic bGFtYmRhLWNsaWVudDpsYW1iZGEtc2VjcmV0',
             'Content-Type': 'application/x-www-form-urlencoded'
