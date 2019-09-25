@@ -5,21 +5,23 @@ import "../../src/App.css"
 
 
 
+
 const Navigation = () => {
   return (
     <div>
       <section className="nav">
 
-        <img src={CV} width="60" height="60" />
-      
+        <img src={CV} width="60" height="60" alt="college value logo" />
+
         <div>
-          <Link to="/about">About</Link>
+          <Link to="/collegepage" alt="predictions">Get Your Predictions</Link>
         </div>
         <div>
-          <Link to="/login">Predictions</Link>
+          <Link to="/about" alt="about page">About</Link>
+
         </div>
         <div>
-          <Link to="/signup">Sign Up</Link>
+          <Link to="/signup" alt="signup page">Sign Up</Link>
         </div>
       </section>
     </div>
