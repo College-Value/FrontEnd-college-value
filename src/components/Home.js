@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
 import PhotoCard from "./PhotoCard";
-
 import college1 from "../imgs/college1.png";
 import college2 from "../imgs/college 2.png";
 import college3 from "../imgs/college3.jpg";

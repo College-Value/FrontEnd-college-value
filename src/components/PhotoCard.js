@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "../../node_modules/axios";
-import "./images.css";
+import "../../src/App.css";
 
 const PhotoCard = () => {
   const [homeImg, sethomeImg] = useState([]);
