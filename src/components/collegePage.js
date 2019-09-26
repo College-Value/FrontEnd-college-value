@@ -1,18 +1,13 @@
-
-import React from 'react'
-import Navigation from './Navigation'
-
+import React from "react";
+import Navigation from "./Navigation";
 
 const collegePage = () => {
-    return (
-        <div>
+  return (
+    <div>
+      <Navigation />
+      Find out how much you will make! :)
+    </div>
+  );
+};
 
-
-            <Navigation />
-
-            Find out how much you will make! :)
-        </div>
-    )
-}
-
-export default collegePage
+export default collegePage;
