@@ -3,6 +3,19 @@
   font-family: "Raleway", sans-serif;
 }
 
+.main-image {
+  width: 100%;
+  background: #fafafa;
+  align-items: center;
+  margin: 10px auto;
+
+}  
+.img-only {
+  margin: 10px 10px;
+  height: 500px;
+  border-radius: 20px;
+}
+
 .LoginTitle {
   font-size: 80px;
   border-bottom: 1px solid lightgrey;
@@ -236,7 +249,8 @@
 }
 
 .callToAction p {
-  color: grey;
+  color: rgb(13, 133, 185);
+  line-height: 1.5;
   width: fit-content;
   margin: 10px auto;
   font-size: 28px;

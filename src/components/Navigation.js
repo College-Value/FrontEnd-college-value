@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CV from "../imgs/largelogo.png";
-import "../../src/App.css";
 import { logout } from "../helpers/Logout";
 import About from './About'
 import Profile from './Profile/Profile'

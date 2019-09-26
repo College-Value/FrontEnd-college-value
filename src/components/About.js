@@ -1,5 +1,6 @@
 import React from 'react'
 import Navigation from "./Navigation";
+import "../../src/App.css"
 import NH from "../imgs/nh.jpg";
 import ZS from "../imgs/zs.png"
 import GJ from "../imgs/gj.png"
