@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import CV from "../imgs/largelogo.png";
+// import CV from "../imgs/largelogo.png";
 import Navigation from "./Navigation";
 
 const SignUp = props => {
