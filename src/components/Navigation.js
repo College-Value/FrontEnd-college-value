@@ -8,10 +8,13 @@ import About from './About'
 const Navigation = () => {
   return (
     <div>
-      <section className="nav">
-        <img src={CV} width="60" height="60" alt="college value logo" />
+      <section>
+        
 
         <div className="nav">
+          <div>
+        <img src={CV} width="60" height="60" alt="college value logo" />
+        </div>
           <div>
             <Link to="/">Home</Link>
           </div>
@@ -23,7 +26,7 @@ const Navigation = () => {
           </div>
           <div>
             <Link to="/login" alt="predictions">
-             Log In
+             Sign In
             </Link>
           </div>
           <div>

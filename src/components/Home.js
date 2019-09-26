@@ -12,7 +12,6 @@ const Home = () => {
     <div className="homePage">
       <Navigation />
       <header>
-        <img src={CV} width="60" height="60" alt="college value logo" />
         <h1>College Value/Earnings Predictor</h1>
       </header>
       <PhotoCard />

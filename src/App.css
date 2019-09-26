@@ -70,7 +70,7 @@
 }
 
 .loginPage h2 {
-  font-size: 38px;
+  font-size: 28px;
 }
 
 .question {
@@ -92,10 +92,18 @@
 }
 
 .pageDesc {
-  font-size: 80px;
+  font-size: 48px;
   padding: 20px;
   width: fit-content;
   margin: 0 auto;
+}
+
+.sign-up-pageDesc {
+  font-size: 48px;
+  padding: 20px;
+  width: fit-content;
+  margin: 0 auto;
+  color: #2EB5E0;
 }
 
 .nav {
@@ -104,6 +112,7 @@
   font-size: 18px;
   padding: 12px;
   justify-content: center;
+  align-items: center;
 }
 
 .nav a {

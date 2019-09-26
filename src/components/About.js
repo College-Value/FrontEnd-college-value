@@ -1,6 +1,7 @@
 import React from 'react'
 import Navigation from "./Navigation";
 import NH from "../imgs/nh.jpg";
+import ZS from "../imgs/zs.png"
 
 const About = () => {
     return (
@@ -8,7 +9,7 @@ const About = () => {
             <Navigation />
             <h1>About Page</h1>
             <section>
-                <img src={NH} alt="photo of Zac" width="350" />
+                <img src={ZS} alt="photo of Zac" width="350" />
                 <h2>Team Lead</h2>
                 <h3>Zac Smith</h3>
             </section>
