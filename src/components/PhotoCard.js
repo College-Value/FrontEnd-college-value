@@ -34,7 +34,7 @@ const PhotoCard = () => {
   // console.log('display from outside', displayImg)
   return (
     <div className="main-image">
-      <img src={`${displayImg}`} alt="photos of college life" />
+      <img src={`${displayImg}`} className="img-only" alt="college life" />
     </div>
   );
 };
