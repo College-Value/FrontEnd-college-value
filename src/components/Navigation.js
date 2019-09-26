@@ -4,6 +4,7 @@ import CV from "../imgs/largelogo.png";
 import "../../src/App.css";
 import { logout } from "../helpers/Logout";
 import About from './About'
+import Profile from './Profile/Profile'
 
 const Navigation = () => {
   return (
@@ -19,6 +20,11 @@ const Navigation = () => {
           <div>
             <Link to="/about" alt="about page">
               About
+            </Link>
+          </div>
+          <div>
+            <Link to="/profile" >
+              Profile
             </Link>
           </div>
           <div>

@@ -7,6 +7,7 @@ import SignUp from './components/SignUp'
 import collegePage from './components/collegePage'
 import PrivateRoute from './components/PrivateRoute'
 import About from './components/About'
+import Profile from './components/Profile/Profile'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/signup" component={SignUp} />
         <Route path="/about" component={About} />
+        <Route path="/profile" component={Profile} />
        
 
         <PrivateRoute path='/collegePage' component={collegePage} />

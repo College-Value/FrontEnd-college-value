@@ -27,7 +27,8 @@ const Login = props => {
         }
       )
       .then(res => {
-        localStorage.setItem("token", res.data.payload);
+        console.log(res)
+        localStorage.setItem("token", res.data.access_token);
         props.history.push("/collegePage");
       })
       .catch(err => console.log(err.response));
