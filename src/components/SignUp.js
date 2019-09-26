@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import CV from "../imgs/largelogo.png";
+// import CV from "../imgs/largelogo.png";
 import Navigation from "./Navigation";
 
 const SignUp = props => {
@@ -29,11 +29,11 @@ const SignUp = props => {
       <Navigation />
       <Link className="titleLink" to="/">
         <h1 className="LoginTitle">
-          <img src={CV} width="60" height="60" alt="college value logo" />
+          {/* <img src={CV} width="60" height="60" alt="college value logo" /> */}
           College Value
         </h1>
       </Link>
-      <p className="pageDesc">Sign Up</p>
+      <p className="sign-up-pageDesc">Sign Up</p>
       <form onSubmit={handleSubmit} className="loginForm">
         <h2>Username:</h2>
         <input
@@ -56,7 +56,7 @@ const SignUp = props => {
 
         <Link className="loginSignUpLink" to="/login">
           {" "}
-          Log In
+          Sign In
         </Link>
       </div>
     </div>

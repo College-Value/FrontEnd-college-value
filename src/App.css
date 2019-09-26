@@ -70,7 +70,7 @@
 }
 
 .loginPage h2 {
-  font-size: 38px;
+  font-size: 28px;
 }
 
 .question {
@@ -92,10 +92,18 @@
 }
 
 .pageDesc {
-  font-size: 80px;
+  font-size: 48px;
   padding: 20px;
   width: fit-content;
   margin: 0 auto;
+}
+
+.sign-up-pageDesc {
+  font-size: 48px;
+  padding: 20px;
+  width: fit-content;
+  margin: 0 auto;
+  color: #2EB5E0;
 }
 
 .nav {
@@ -104,6 +112,7 @@
   font-size: 18px;
   padding: 12px;
   justify-content: center;
+  align-items: center;
 }
 
 .nav a {
@@ -142,6 +151,7 @@
 /* } */
 
 .sign-up-btn {
+  margin-top: 20px;
   margin-bottom: 10px;
   font-size: 16px;
   background-color: white;
@@ -193,9 +203,7 @@
 .homepageContent p {
   font-size: 28px;
   display: flex;
-
   width: 20%;
-
   align-content: center;
   align-items: center;
   justify-content: center;
@@ -230,13 +238,23 @@
 .callToAction p {
   color: grey;
   width: fit-content;
-  margin: 0 auto;
-  font-size: 16px;
+  margin: 10px auto;
+  font-size: 28px;
   margin-bottom: 10px;
 }
 
 .team-member {
-  margin: 0 auto;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+}
+
+.team-member img {
+  max-width: 60%;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin:20px;
 }
 
 
