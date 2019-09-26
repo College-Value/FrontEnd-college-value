@@ -1,11 +1,11 @@
-import React from "react";
-// import axios from "axios";
+import React, { useState } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import CV from "../imgs/largelogo.png";
 import Navigation from "./Navigation";
 
 const SignUp = props => {
-  const [user, setUser] = useState({username: '', password: ''});
+  const [user, setUser] = useState({ username: "", password: "" });
 
   const handleChange = e => {
     e.preventDefault();
@@ -14,14 +14,12 @@ const SignUp = props => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(user.username)
-    console.log(user.password)
+    console.log(user.username);
+    console.log(user.password);
     axios
-      .post(
-        "https://gcj2-college-value.herokuapp.com/createnewuser", user)
+      .post("https://gcj2-college-value.herokuapp.com/createnewuser", user)
       .then(res => {
         props.history.push("/login");
-      
       })
       .catch(err => console.log(err.response));
   };
