@@ -6,6 +6,7 @@ import Home from './components/Home'
 import SignUp from './components/SignUp'
 import collegePage from './components/collegePage'
 import PrivateRoute from './components/PrivateRoute'
+import About from './components/About'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/login" component={Login} />
         <Route path="/signup" component={SignUp} />
+        <Route path="/about" component={About} />
        
 
         <PrivateRoute path='/collegePage' component={collegePage} />
