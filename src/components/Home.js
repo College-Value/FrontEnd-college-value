@@ -17,7 +17,7 @@ const Home = () => {
     <div className="homePage">
       <Navigation />
       <header>
-        <img src={CV} width="60" height="60" />
+        <img src={CV} width="60" height="60" alt="college value logo"/>
         <h1>College Value/Earnings Predictor</h1>
       </header>
       <PhotoCard />
@@ -43,14 +43,14 @@ const Home = () => {
           <p> <i className="fas fa-balance-scale-left"></i>{' '}<br></br>Choosing a college is an emotional decision, use the predictor to
             focus on facts</p>
         
-          <img src={college1} width='300' />
+          <img src={college1} width='300' alt="college graduate icon" />
         </div>
 
         <div className='div2'>
           
           <p><i className="fas fa-piggy-bank"></i>{' '}<br></br> Save money and time by making sure the cost of your college
             education aligns with your life plans</p>
-          <img src={college2} width='400'/>
+          <img src={college2} width='400'alt="stack of coins" />
         </div>
 
         <div className='div1'>
@@ -58,7 +58,7 @@ const Home = () => {
           <p>  <i className="fas fa-graduation-cap"></i>{' '}<br></br> Find out which college will help you achieve your goals with the
             least amount of debt possible</p>
          
-          <img src={college3} width='400'/>
+          <img src={college3} width='400' alt="ten dollar bills"/>
         </div>
 
       </div>
