@@ -12,7 +12,7 @@ const About = () => {
     return (
         <div>
             <Navigation />
-            <h1>About Page</h1>
+            <h1>The College Value Predictor Team</h1>
             <div className="About">
                 <section className="team-member">
                     <img src={ZS} alt="Zachery Smith" width="350" />
