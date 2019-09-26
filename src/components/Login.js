@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import CV from "../imgs/largelogo.png";
+// import CV from "../imgs/largelogo.png";
 import Navigation from "./Navigation";
 
 const Login = props => {
@@ -39,11 +39,11 @@ const Login = props => {
       <Navigation />
       <Link className="titleLink" to="/">
         <h1 className="LoginTitle">
-          <img src={CV} width="60" height="60" alt="college savings logo" />
+          {/* <img src={CV} width="60" height="60" alt="college savings logo" /> */}
           College Value
         </h1>
       </Link>
-      <p className="pageDesc">Log In</p>
+      <p className="pageDesc">Sign In</p>
       <form onSubmit={handleSubmit} className="loginForm">
         <h2>Username:</h2>
         <input
@@ -59,7 +59,7 @@ const Login = props => {
           placeholder="password"
           onChange={handleChange}
         />
-        <button type="submit">Log In</button>
+        <button type="submit">Sign In</button>
       </form>
       <div>
         <p className="question"> Don't have an account?</p>

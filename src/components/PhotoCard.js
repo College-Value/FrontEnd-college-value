@@ -19,7 +19,7 @@ const PhotoCard = () => {
         const min = 1;
         const max = 10;
         const rand = Math.floor(min + Math.random() * (max - min));
-        console.log(rand);
+        // console.log(rand);
 
         const display = homeImg[rand].urls.regular;
         // console.log('Display', display)
