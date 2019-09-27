@@ -65,17 +65,18 @@ const Profile = ({ profiles, updateProfiles, props }) => {
     <div>
       <Navigation />
 
-
+<div className='profilePage'>
       {profileList.map(profile => {
         return (
           
-          <div key={profile.username} onClick={() => editProfile(profile)}>
+          <div className='profileContent' key={profile.username} onClick={() => editProfile(profile)}>
             <span>
               <button className="delete" onClick={() => deleteProfile(profile)}>
                 delete
               </button>
-              
-              {profile.username}
+              <p className='usernameText'>
+              Username:  {profile.username}
+              </p>
               <button className="edit" onClick={() => editProfile(profile)}>
                 edit
               </button>
@@ -85,6 +86,7 @@ const Profile = ({ profiles, updateProfiles, props }) => {
          
         );
       })}
+      </div>
     </div>
   );
 };
