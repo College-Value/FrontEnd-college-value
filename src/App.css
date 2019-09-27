@@ -240,6 +240,11 @@
   flex-direction: row-reverse;
 }
 
+.lastIMG {
+  margin-bottom: 20px;
+  
+}
+
 .callToAction {
   display: flex;
   flex-direction: column;
@@ -254,6 +259,11 @@
   width: fit-content;
   margin: 10px auto;
   font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.callToAction section {
+  color:grey;
   margin-bottom: 10px;
 }
 
@@ -324,7 +334,12 @@
 
 .delete:hover {
   cursor: pointer;
-  background-color: rgb(255, 0, 51);
+  background-color: rgb(189, 0, 0);
 }
 
+.About {
+  
+  width: fit-content;
+  margin: 0 auto;
+}
 
