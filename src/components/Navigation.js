@@ -6,36 +6,40 @@ import { logout } from "../helpers/Logout";
 import About from './About'
 import Profile from './Profile/Profile'
 
+
+
+
 const Navigation = () => {
   return (
     <div>
-      <section className="nav">
-        <img src={CV} width="60" height="60" alt="college value logo" />
+      <section>
+
 
         <div className="nav">
+          <div>
+            <img src={CV} width="60" height="60" alt="college value logo" />
+          </div>
           <div>
             <Link to="/">Home</Link>
           </div>
 
           <div>
-            <Link to="/about" alt="about page">
-              About
-            </Link>
+            <Link to="/about" alt="about page">About</Link>
           </div>
           <div>
+
             <Link to="/profile" >
               Profile
             </Link>
           </div>
           <div>
-            <Link to="/login" alt="predictions">
-             Log In
-            </Link>
+           
+
+            <Link to="/login" alt="predictions">Sign In</Link>
+
           </div>
           <div>
-            <Link to="/signup" alt="signup page">
-              Sign Up
-            </Link>
+            <Link to="/signup" alt="signup page">Sign Up</Link>
           </div>
           <div>
             <Link to="/" onClick={logout}>

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
 import PhotoCard from "./PhotoCard";
-import CV from "../imgs/largelogo.png";
+// import CV from "../imgs/largelogo.png";
 import college1 from "../imgs/college1.png";
 import college2 from "../imgs/college 2.png";
 import college3 from "../imgs/college3.jpg";
@@ -12,16 +12,15 @@ const Home = () => {
     <div className="homePage">
       <Navigation />
       <header>
-        <img src={CV} width="60" height="60" alt="college value logo" />
         <h1>College Value/Earnings Predictor</h1>
       </header>
       <PhotoCard />
       <div className="homepageContent">
         <div className="callToAction">
           <span>
-            Time to make one of the biggest descisions of your lives. <br></br>{" "}
+            <p>Time to make one of the biggest descisions of your lives. <br></br>{" "}
             Use the power of data science to predict which college is best for
-            you.
+            you.</p>
           </span>
           <Link to="/signup">
             <button className="sign-up-btn">Sign Up</button>
