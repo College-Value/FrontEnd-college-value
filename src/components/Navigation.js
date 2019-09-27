@@ -28,7 +28,7 @@ const Navigation = () => {
           <div>
 
             <Link to="/profile" >
-              Profile
+              Profile (Admin Only)
             </Link>
           </div>
           <div>

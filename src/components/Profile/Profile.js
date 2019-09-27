@@ -3,6 +3,7 @@ import Navigation from "../Navigation";
 import axios from "axios";
 import { getSnapshotData } from "jest-snapshot/build/utils";
 import axiosWithAuth from "../../helpers/axiosWithAuth";
+import { ErrorMessage } from "formik";
 
 const initialProfile = {
   profile: ""
@@ -50,41 +51,54 @@ const Profile = ({ profiles, updateProfiles, props }) => {
       .catch(err => console.log(err.response));
   };
 
+
+
   const deleteProfile = profile => {
     axiosWithAuth()
       .delete(
         `https://gcj2-college-value.herokuapp.com/searches/${profileToEdit.id}`
       )
       .then(res => {
-        updateProfiles(profiles.filter(profile => profile.id !== res.data));
+        updateProfiles(profiles.filter(profile => profile.id !== res.data)) 
+        
+
+        
       })
-      .catch(err => console.log(err.response));
+      .catch(err => console.log(err.response)) 
+     
+
+
+   
   };
 
   return (
     <div>
       <Navigation />
 
-
-      {profileList.map(profile => {
-        return (
-          
-          <div key={profile.username} onClick={() => editProfile(profile)}>
-            <span>
-              <button className="delete" onClick={() => deleteProfile(profile)}>
-                delete
-              </button>
-              
-              {profile.username}
-              <button className="edit" onClick={() => editProfile(profile)}>
-                edit
-              </button>
-            </span>
+      <div className="profilePage">
+        {profileList.map(profile => {
+          return (
+            <div
+              className="profileContent"
+              key={profile.username}
+              onClick={() => editProfile(profile)}
+            >
+              <span>
+                <button
+                  className="delete"
+                  onClick={() => deleteProfile(profile)}
+                >
+                  delete
+                </button>
+                <p className="usernameText">Username: {profile.username}</p>
+                <button className="edit" onClick={() => editProfile(profile)}>
+                  edit
+                </button>
+              </span>
             </div>
-          
-         
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 };

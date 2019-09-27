@@ -240,6 +240,11 @@
   flex-direction: row-reverse;
 }
 
+.lastIMG {
+  margin-bottom: 20px;
+  
+}
+
 .callToAction {
   display: flex;
   flex-direction: column;
@@ -257,6 +262,11 @@
   margin-bottom: 10px;
 }
 
+.callToAction section {
+  color:grey;
+  margin-bottom: 10px;
+}
+
 .team-member {
   display: flex;
   margin: 10px;
@@ -271,7 +281,65 @@
   margin:20px;
 }
 
+.profileContent {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  margin: 40px;
+ 
+}
 
+.profileContent p {
+  font-size: 20px;
+}
 
+.profilePage {
+  
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 20px;
+}
 
+.delete {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.edit {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.edit:hover {
+  cursor: pointer;
+  background-color: rgb(0, 179, 0);
+}
+
+.delete:hover {
+  cursor: pointer;
+  background-color: rgb(189, 0, 0);
+}
+
+.About {
+  
+  width: fit-content;
+  margin: 0 auto;
+}
 

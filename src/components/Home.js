@@ -24,7 +24,7 @@ const Home = () => {
           <Link to="/signup">
             <button className="sign-up-btn">Sign Up</button>
           </Link>
-          <p> or </p>
+          <section> or </section>
           <Link to="/login">
             <button className="log-in-btn">Log in</button>
           </Link>
@@ -58,7 +58,7 @@ const Home = () => {
             debt possible
           </p>
 
-          <img src={college3} width="400" alt="ten dollar bills" />
+          <img className='lastIMG' src={college3} width="400" alt="ten dollar bills" />
         </div>
       </div>
     </div>
