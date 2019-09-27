@@ -5,10 +5,12 @@ import { logout } from "../helpers/Logout";
 import About from './About'
 import Profile from './Profile/Profile'
 
-
-
+const myFunction = (e) => {
+  alert("Admin access required")
+}
 
 const Navigation = () => {
+
   return (
     <div>
       <section>
@@ -27,12 +29,13 @@ const Navigation = () => {
           </div>
           <div>
 
-            <Link to="/profile" >
+            <Link to="/profile" onClick={myFunction} >
+             
               Profile (Admin Only)
             </Link>
           </div>
           <div>
-           
+
 
             <Link to="/login" alt="predictions">Sign In</Link>
 
