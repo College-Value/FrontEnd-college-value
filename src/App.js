@@ -8,6 +8,7 @@ import collegePage from './components/collegePage'
 import PrivateRoute from './components/PrivateRoute'
 import About from './components/About'
 import Profile from './components/Profile/Profile'
+import editProfile from './components/Profile/editProfile'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/signup" component={SignUp} />
         <Route path="/about" component={About} />
         <Route path="/profile" component={Profile} />
+        <Route path="/editProfile" component={editProfile} />
        
 
         <PrivateRoute path='/collegePage' component={collegePage} />

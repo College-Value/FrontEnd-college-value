@@ -4,15 +4,13 @@ import axios from "axios";
 import { getSnapshotData } from "jest-snapshot/build/utils";
 import axiosWithAuth from "../../helpers/axiosWithAuth";
 import { ErrorMessage } from "formik";
+import { Link } from "react-router-dom";
 
-const initialProfile = {
-  profile: ""
-};
 
 const Profile = ({ profiles, updateProfiles, props }) => {
   const [profileList, setProfileList] = useState([]);
   const [editing, setEditing] = useState(false);
-  const [profileToEdit, setProfileToEdit] = useState(initialProfile);
+  const [profileToEdit, setProfileToEdit] = useState({username: ''});
 
   useEffect(() => {
     axios
@@ -29,27 +27,7 @@ const Profile = ({ profiles, updateProfiles, props }) => {
       .catch(err => console.log(err.response));
   }, []);
 
-  const editProfile = profile => {
-    setEditing(true);
-    setProfileToEdit(profile);
-  };
-
-  const saveEdit = e => {
-    e.preventDefault();
-    axiosWithAuth()
-      .put(
-        `https://gcj2-college-value.herokuapp.com/users/user/${profileToEdit.id}`,
-        profileToEdit
-      )
-      .then(res => {
-        updateProfiles([
-          ...profiles.filter(profile => profile.id !== profileToEdit.id),
-          res.data
-        ]);
-        setEditing(false);
-      })
-      .catch(err => console.log(err.response));
-  };
+ 
 
 
 
@@ -71,6 +49,7 @@ const Profile = ({ profiles, updateProfiles, props }) => {
    
   };
 
+
   return (
     <div>
       <Navigation />
@@ -81,7 +60,6 @@ const Profile = ({ profiles, updateProfiles, props }) => {
             <div
               className="profileContent"
               key={profile.username}
-              onClick={() => editProfile(profile)}
             >
               <span>
                 <button
@@ -91,9 +69,9 @@ const Profile = ({ profiles, updateProfiles, props }) => {
                   delete
                 </button>
                 <p className="usernameText">Username: {profile.username}</p>
-                <button className="edit" onClick={() => editProfile(profile)}>
+                <Link className='edit' to='/editProfile'>
                   edit
-                </button>
+                </Link>
               </span>
             </div>
           );
